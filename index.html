@@ -12,214 +12,189 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="header" id="header">
-  <div class="container header-inner">
+<nav class="nav" id="nav">
+  <div class="nav-inner">
     <a href="#top" class="brand">
       <span class="brand-mark" aria-hidden="true"><img src="assets/images/mascot.png" alt=""></span>
-      <span class="brand-word">Little<em>dent</em><sup>™</sup></span>
+      <span class="brand-word">Little<span class="pink">dent</span><sup>™</sup></span>
     </a>
-    <nav class="nav" id="nav">
-      <a href="#trust">Why Littledent</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#why">Why Littledent</a>
       <a href="#formula">Formula</a>
       <a href="#routine">Routine</a>
       <a href="#faq">FAQ</a>
-    </nav>
-    <div class="header-cta">
-      <a href="https://wa.me/919581212384?text=Hi%2C%20I%27d%20like%20to%20order%20Littledent%20kids%20toothpaste." class="btn btn-grad" target="_blank" rel="noopener">Order on WhatsApp</a>
-      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
     </div>
+    <a href="https://wa.me/919581212384?text=Hi%2C%20I%27d%20like%20to%20order%20Littledent%20kids%20toothpaste." class="btn btn-grad nav-btn" target="_blank" rel="noopener">Order now</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
   </div>
-</header>
+</nav>
 
-<main id="top">
+<main>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-glow" aria-hidden="true"></div>
-    <div class="container hero-grid">
-      <div class="hero-visual">
-        <span class="hero-blob" aria-hidden="true"></span>
-        <img class="hero-product" src="assets/images/hero-product.jpeg" alt="Littledent kids toothpaste box and tube, bubblegum flavour, 70g">
-      </div>
+  <header class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-inner">
       <div class="hero-text">
         <span class="badge"><i>✦</i> Made by a pediatric dentist</span>
-        <h1>Brushing just became the <span class="accent">fun part</span> of bedtime.</h1>
+        <h1>Brushing just became the <em>fun part</em> of bedtime.</h1>
         <p class="lead">A bubblegum flavour kids genuinely love, with real cavity protection, kid-safe fluoride and a gentle formula made for the smallest smiles.</p>
         <div class="hero-actions">
           <a href="https://wa.me/919581212384?text=Hi%2C%20I%27d%20like%20to%20order%20Littledent%20kids%20toothpaste." class="btn btn-grad btn-lg" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.23-8.23 8.23zm4.52-6.16c-.25-.13-1.47-.72-1.69-.8-.23-.09-.39-.13-.56.12-.16.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
             Order on WhatsApp
           </a>
-          <a href="tel:+919581212384" class="btn btn-outline btn-lg">Call Dr Sundeep</a>
+          <a href="tel:+919581212384" class="btn btn-outline btn-lg">Call Dr Sundeep Manchala</a>
         </div>
         <div class="hero-proof">
           <span class="stars" aria-hidden="true">★★★★★</span>
           <span>Loved by parents, adored by little ones</span>
         </div>
       </div>
+      <div class="hero-visual">
+        <div class="hero-frame">
+          <div class="hero-photo"><img src="assets/images/hero-product.jpeg" alt="Littledent kids toothpaste box and tube, bubblegum flavour, 70g"></div>
+          <span class="hero-mascot" aria-hidden="true"><img src="assets/images/mascot.png" alt=""></span>
+          <span class="hero-tag"><b>Bubblegum</b> · 70g</span>
+        </div>
+      </div>
     </div>
-  </section>
+  </header>
 
   <!-- MARQUEE -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span><i>✦</i> Cavity protection</span>
-      <span><i>✦</i> Strengthens enamel</span>
-      <span><i>✦</i> Bubblegum flavour</span>
-      <span><i>✦</i> Safe &amp; mild for kids</span>
-      <span><i>✦</i> Vegan friendly</span>
-      <span><i>✦</i> Pediatric-dentist formulated</span>
-      <span><i>✦</i> Cavity protection</span>
-      <span><i>✦</i> Strengthens enamel</span>
-      <span><i>✦</i> Bubblegum flavour</span>
-      <span><i>✦</i> Safe &amp; mild for kids</span>
-      <span><i>✦</i> Vegan friendly</span>
-      <span><i>✦</i> Pediatric-dentist formulated</span>
+      <span><i>✦</i> Cavity protection <i>✦</i> Strengthens enamel <i>✦</i> Bubblegum flavour <i>✦</i> Safe &amp; mild for kids <i>✦</i> Vegan friendly <i>✦</i> Pediatric-dentist formulated&nbsp;&nbsp;</span>
+      <span><i>✦</i> Cavity protection <i>✦</i> Strengthens enamel <i>✦</i> Bubblegum flavour <i>✦</i> Safe &amp; mild for kids <i>✦</i> Vegan friendly <i>✦</i> Pediatric-dentist formulated&nbsp;&nbsp;</span>
     </div>
   </div>
 
-  <!-- TRUST -->
-  <section class="section" id="trust">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="kicker">Why parents trust it</span>
-        <h2>Made the way a dentist would make it for their own kids.</h2>
-        <p class="section-lead">Behind the playful tube is a simple promise: protect little teeth while they are most vulnerable, and be honest about every ingredient inside.</p>
-      </div>
-      <div class="num-grid">
-        <article class="num-card reveal">
-          <div class="num-top"><span class="num">01</span><span class="num-line"></span></div>
-          <h3>Real pediatric expertise</h3>
-          <p>Built for the way little teeth grow — not a shrunk-down adult toothpaste with a cartoon on the box.</p>
-        </article>
-        <article class="num-card reveal">
-          <div class="num-top"><span class="num">02</span><span class="num-line"></span></div>
-          <h3>Kid-safe fluoride</h3>
-          <p>Cavity-fighting fluoride within a gentle 500 ppm limit. Real protection, without the worry.</p>
-        </article>
-        <article class="num-card reveal">
-          <div class="num-top"><span class="num">03</span><span class="num-line"></span></div>
-          <h3>Clean &amp; honest</h3>
-          <p>A vegan-friendly, gently foaming formula with every single ingredient printed in full. Nothing hidden.</p>
-        </article>
-      </div>
+  <!-- WHY -->
+  <section class="section" id="why">
+    <span class="kicker">Why parents trust it</span>
+    <h2 class="h2 h2-narrow">Made the way a dentist would make it for their own kids.</h2>
+    <p class="section-lead">Behind the playful tube is a simple promise: protect little teeth while they are most vulnerable, and be honest about every ingredient inside.</p>
+    <div class="cards-3">
+      <article class="card num-card">
+        <div class="num-top"><span class="num">01</span><span class="num-line"></span></div>
+        <h3>Real pediatric expertise</h3>
+        <p>Built for the way little teeth grow, not a shrunk-down adult toothpaste with a cartoon on the box.</p>
+      </article>
+      <article class="card num-card">
+        <div class="num-top"><span class="num">02</span><span class="num-line"></span></div>
+        <h3>Kid-safe fluoride</h3>
+        <p>Cavity-fighting fluoride within a gentle 500 ppm limit. Real protection, none of the worry.</p>
+      </article>
+      <article class="card num-card">
+        <div class="num-top"><span class="num">03</span><span class="num-line"></span></div>
+        <h3>Nothing hidden</h3>
+        <p>Vegan-friendly, gently foaming, and every ingredient printed in full. If it's in the tube, it's on the label.</p>
+      </article>
     </div>
   </section>
 
-  <!-- MASCOT (dark) -->
-  <section class="section mascot-wrap" id="mascot">
-    <div class="container">
-      <div class="dark-card mascot-card reveal">
-        <div class="dark-glow" aria-hidden="true"></div>
-        <div class="mascot-media">
-          <span class="mascot-ring" aria-hidden="true"></span>
-          <img src="assets/images/mascot.png" alt="Littledent winking tooth mascot holding a toothbrush">
-        </div>
-        <div class="mascot-copy">
-          <span class="kicker kicker-gold">Meet the mascot</span>
-          <h2>The friendliest tooth in the bathroom.</h2>
-          <p>Our winking tooth is on every box and tube — turning brushing into a ritual kids look forward to. Habits built young last a lifetime, and this is where the best ones start.</p>
-          <ul class="ticks">
-            <li>Packaging kids recognise and reach for</li>
-            <li>A flavour and foam they don't want to spit out too soon</li>
-            <li>Designed to grow a lifelong, positive brushing habit</li>
-          </ul>
-        </div>
+  <!-- MASCOT -->
+  <section class="section-wide">
+    <div class="dark-card mascot-card">
+      <span class="glow glow-a" aria-hidden="true"></span>
+      <span class="glow glow-b" aria-hidden="true"></span>
+      <div class="mascot-media">
+        <span class="mascot-big" aria-hidden="true"><img src="assets/images/mascot.png" alt="Littledent winking tooth mascot"></span>
+      </div>
+      <div class="mascot-copy">
+        <span class="kicker kicker-gold">Meet the mascot</span>
+        <h2 class="h2">The friendliest tooth in the bathroom.</h2>
+        <p class="dark-lead">Our winking tooth is on every box and tube, turning brushing into a ritual kids look forward to. Habits built young last a lifetime, and the good ones start here.</p>
+        <ul class="ticks">
+          <li><span class="tick" aria-hidden="true">✓</span>Packaging kids recognise and reach for</li>
+          <li><span class="tick" aria-hidden="true">✓</span>A flavour and foam they don't want to spit out too soon</li>
+          <li><span class="tick" aria-hidden="true">✓</span>Designed to grow a lifelong, positive brushing habit</li>
+        </ul>
       </div>
     </div>
   </section>
 
   <!-- FORMULA -->
-  <section class="section" id="formula">
-    <div class="container formula-grid">
-      <div class="formula-copy reveal">
-        <span class="kicker">The formula</span>
-        <h2>Nothing hidden. Everything considered.</h2>
-        <p class="section-lead">A gently foaming, fluoridated toothpaste made for children, with the full ingredient list printed exactly as it appears on the pack.</p>
-        <div class="pills">
-          <span class="pill pill-pink">Fluoride ≤ 500 ppm</span>
-          <span class="pill pill-purple">Bubblegum flavour</span>
-          <span class="pill pill-gold">70 g tube</span>
-          <span class="pill pill-green">Vegan friendly</span>
-        </div>
+  <section class="section formula" id="formula">
+    <div class="formula-copy">
+      <span class="kicker">The formula</span>
+      <h2 class="h2">Nothing hidden. Everything considered.</h2>
+      <p class="section-lead">A gently foaming, fluoridated toothpaste made for children, with the full ingredient list printed exactly as it appears on the pack.</p>
+      <div class="pills">
+        <span class="pill pill-pink">Fluoride ≤ 500 ppm</span>
+        <span class="pill pill-purple">Bubblegum flavour</span>
+        <span class="pill pill-gold">70 g tube</span>
+        <span class="pill pill-green">Vegan friendly</span>
       </div>
-      <div class="ingredients-card reveal">
-        <h3>Full ingredient list</h3>
-        <p class="ingredients">Purified Water, Sorbitol, Silica, Xylitol, Glycerin, Sodium Lauryl Sulphate, Sodium Carboxymethyl Cellulose, Flavours, Saccharin Sodium, Sodium Monofluorophosphate, Sodium Methyl Hydroxy Benzoate, Colour Ponceau 4R.</p>
-        <p class="ingredients-note">Always check the pack for the full list, batch number and expiry before use. For dental use only.</p>
-      </div>
+    </div>
+    <div class="card ingredients-card">
+      <h3>Full ingredient list</h3>
+      <span class="underline-bar" aria-hidden="true"></span>
+      <p class="ingredients">Purified Water · Sorbitol · Silica · Xylitol · Glycerin · Sodium Lauryl Sulphate · Sodium Carboxymethyl Cellulose · Flavours · Saccharin Sodium · Sodium Monofluorophosphate · Sodium Methyl Hydroxy Benzoate · Colour Ponceau 4R</p>
+      <p class="ingredients-note">Always check the pack for the full list, batch number and expiry before use. For dental use only.</p>
     </div>
   </section>
 
   <!-- ROUTINE -->
-  <section class="section" id="routine">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="kicker">The routine</span>
-        <h2>Four little steps, twice a day.</h2>
-      </div>
-      <div class="steps">
-        <article class="step-card reveal"><span class="step-badge s1">1</span><h3>Pea-sized amount</h3><p>A pea-size dab is all it takes, or as your dentist recommends.</p></article>
-        <article class="step-card reveal"><span class="step-badge s2">2</span><h3>Brush twice daily</h3><p>Morning and night, two full minutes each, to build a healthy habit.</p></article>
-        <article class="step-card reveal"><span class="step-badge s3">3</span><h3>Supervise under 6</h3><p>Little ones under six should be supervised while brushing. Spit, don't swallow.</p></article>
-        <article class="step-card reveal"><span class="step-badge s4">4</span><h3>Store &amp; seal</h3><p>Store below 30°C in a dry place and replace the cap tightly after use.</p></article>
-      </div>
+  <section class="section center" id="routine">
+    <span class="kicker">The routine</span>
+    <h2 class="h2 h2-center">Four little steps, twice a day.</h2>
+    <div class="cards-4">
+      <article class="card step-card"><span class="step-badge s1">1</span><h3>Pea-sized amount</h3><p>A pea-size dab is all it takes, or as your dentist recommends.</p></article>
+      <article class="card step-card"><span class="step-badge s2">2</span><h3>Brush twice daily</h3><p>Morning and night, two full minutes each, to build a healthy habit.</p></article>
+      <article class="card step-card"><span class="step-badge s3">3</span><h3>Supervise under 6</h3><p>Little ones below six should brush with an adult nearby. Spit, not swallow.</p></article>
+      <article class="card step-card"><span class="step-badge s4">4</span><h3>Store &amp; seal</h3><p>Keep below 30°C in a dry place and pop the cap back on tightly.</p></article>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="section" id="faq">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="kicker">Good to know</span>
-        <h2>Questions parents ask.</h2>
+  <section class="section faq center" id="faq">
+    <span class="kicker">Good to know</span>
+    <h2 class="h2 h2-center">Questions parents ask.</h2>
+    <div class="accordion">
+      <div class="acc-item">
+        <button class="acc-q" aria-expanded="false">Is Littledent safe for young children?<span class="acc-mark">+</span></button>
+        <div class="acc-a"><p>Yes. Littledent is formulated to be safe and mild for kids, with fluoride kept within the recommended kid-safe limit of 500 ppm. Children under six should always be supervised while brushing and taught to spit, not swallow.</p></div>
       </div>
-      <div class="accordion reveal">
-        <div class="acc-item">
-          <button class="acc-q" aria-expanded="false">Is Littledent safe for young children?<span class="acc-plus"></span></button>
-          <div class="acc-a"><p>Yes. Littledent is formulated to be safe and mild for kids, with fluoride within the recommended kid-safe limit of 500 ppm. Children under six should always be supervised while brushing and taught to spit, not swallow.</p></div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-q" aria-expanded="false">How much toothpaste should my child use?<span class="acc-plus"></span></button>
-          <div class="acc-a"><p>A pea-sized amount is all that's needed, twice a day, or as recommended by your dentist.</p></div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-q" aria-expanded="false">What flavour is it available in?<span class="acc-plus"></span></button>
-          <div class="acc-a"><p>Littledent comes in a fun, kid-approved bubblegum flavour that makes brushing something to look forward to.</p></div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-q" aria-expanded="false">Is it vegan friendly?<span class="acc-plus"></span></button>
-          <div class="acc-a"><p>Yes, Littledent is a vegan-friendly, gently foaming, fluoridated toothpaste.</p></div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-q" aria-expanded="false">How do I order Littledent?<span class="acc-plus"></span></button>
-          <div class="acc-a"><p>Reach Dr Sundeep Manchala by phone or WhatsApp at +91 95812 12384, or email littledent2026@gmail.com and we will help you place your order. Free home delivery on prepaid orders.</p></div>
-        </div>
+      <div class="acc-item">
+        <button class="acc-q" aria-expanded="false">How much toothpaste should my child use?<span class="acc-mark">+</span></button>
+        <div class="acc-a"><p>A pea-sized amount is all that's needed, twice a day, or as recommended by your dentist.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" aria-expanded="false">What flavour is it available in?<span class="acc-mark">+</span></button>
+        <div class="acc-a"><p>Littledent comes in a fun, kid-approved bubblegum flavour that makes brushing time something to look forward to.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" aria-expanded="false">Is it vegan friendly?<span class="acc-mark">+</span></button>
+        <div class="acc-a"><p>Yes, Littledent is a vegan-friendly, gently foaming, fluoridated toothpaste.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" aria-expanded="false">How do I order Littledent?<span class="acc-mark">+</span></button>
+        <div class="acc-a"><p>Reach Dr Sundeep Manchala by phone or WhatsApp at +91 95812 12384, or email littledent2026@gmail.com and we will help you place your order. Free home delivery on prepaid orders.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- CTA (dark) -->
-  <section class="section cta-wrap" id="order">
-    <div class="container">
-      <div class="dark-card cta-card reveal">
-        <div class="dark-glow" aria-hidden="true"></div>
-        <span class="cta-mascot" aria-hidden="true"><img src="assets/images/mascot.png" alt=""></span>
-        <h2>Give your child a reason to smile.</h2>
-        <p>Free home delivery on prepaid orders. Speak with Dr Sundeep Manchala to place your order today.</p>
-        <div class="cta-actions">
-          <a href="https://wa.me/919581212384?text=Hi%2C%20I%27d%20like%20to%20order%20Littledent%20kids%20toothpaste." class="btn btn-grad btn-lg" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.23-8.23 8.23zm4.52-6.16c-.25-.13-1.47-.72-1.69-.8-.23-.09-.39-.13-.56.12-.16.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
-            WhatsApp +91 95812 12384
-          </a>
-          <a href="tel:+919581212384" class="btn btn-ghost-light btn-lg">Call instead</a>
-        </div>
+  <!-- CTA -->
+  <section class="section-wide" id="get">
+    <div class="dark-card cta-card">
+      <span class="glow glow-c" aria-hidden="true"></span>
+      <span class="glow glow-d" aria-hidden="true"></span>
+      <span class="cta-mascot" aria-hidden="true"><img src="assets/images/mascot.png" alt=""></span>
+      <h2 class="h2 h2-center">Give your child a reason to smile.</h2>
+      <p class="dark-lead cta-lead">Free home delivery on prepaid orders. Speak directly with Dr Sundeep Manchala to place your order.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/919581212384?text=Hi%2C%20I%27d%20like%20to%20order%20Littledent%20kids%20toothpaste." class="btn btn-grad btn-lg" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.23-8.23 8.23zm4.52-6.16c-.25-.13-1.47-.72-1.69-.8-.23-.09-.39-.13-.56.12-.16.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.12.16 1.75 2.67 4.25 3.74.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+          WhatsApp +91 95812 12384
+        </a>
+        <a href="mailto:littledent2026@gmail.com" class="btn btn-ghost-light btn-lg">Email us</a>
       </div>
     </div>
   </section>
@@ -227,27 +202,23 @@
 </main>
 
 <footer class="footer">
-  <div class="container footer-inner">
+  <div class="footer-inner">
     <div class="footer-brand">
-      <span class="brand-word footer-word">Little<em>dent</em><sup>™</sup></span>
+      <span class="brand-word footer-word"><span class="fmark" aria-hidden="true"><img src="assets/images/mascot.png" alt=""></span>Little<span class="pink">dent</span><sup>™</sup></span>
       <p>Happy smile, bright future.</p>
     </div>
-    <nav class="footer-nav">
-      <a href="#trust">Why Littledent</a>
+    <div class="footer-nav">
+      <a href="#why">Why Littledent</a>
       <a href="#formula">Formula</a>
-      <a href="#routine">Routine</a>
       <a href="#faq">FAQ</a>
-    </nav>
+    </div>
     <div class="footer-contact">
-      <p class="footer-h">Sales &amp; support</p>
-      <p class="footer-name">Dr Sundeep Manchala</p>
+      <strong>Dr Sundeep Manchala</strong>
       <a href="tel:+919581212384">+91 95812 12384</a>
       <a href="mailto:littledent2026@gmail.com">littledent2026@gmail.com</a>
     </div>
   </div>
-  <div class="container footer-base">
-    <p>&copy; <span id="year"></span> Littledent. All rights reserved. · littledent.in</p>
-  </div>
+  <p class="footer-base">&copy; <span id="year"></span> Littledent. All rights reserved. · littledent.in</p>
 </footer>
 
 <script src="script.js"></script>
