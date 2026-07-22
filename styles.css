@@ -283,6 +283,8 @@ h1, h2, h3 { font-family: var(--disp); font-weight: 600; line-height: 1.08; lett
 .get-inner h2 { position: relative; z-index: 1; font-size: clamp(2rem, 4vw, 3.1rem); font-weight: 600; margin-bottom: 14px; }
 .get-inner p { position: relative; z-index: 1; font-size: 1.12rem; color: rgba(255, 255, 255, 0.9); max-width: 520px; margin: 0 auto 32px; }
 .get-actions { position: relative; z-index: 1; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.get-contact { position: relative; z-index: 1; margin: 20px 0 0; font-size: 0.98rem; color: rgba(255, 255, 255, 0.85); }
+.get-contact strong { color: #fff; font-family: var(--disp); font-weight: 600; }
 .get-inner .btn-solid { background: #fff; color: var(--pink-deep); }
 .get-inner .btn-solid:hover { background: var(--ink); color: #fff; }
 
@@ -291,6 +293,7 @@ h1, h2, h3 { font-family: var(--disp); font-weight: 600; line-height: 1.08; lett
 .footer-inner { display: grid; grid-template-columns: 1.4fr 1fr 1.1fr 1.1fr; gap: 32px; padding-bottom: 34px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
 .footer-contact { display: flex; flex-direction: column; gap: 10px; }
 .footer-h { color: rgba(255,255,255,0.5); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 2px; }
+.footer-name { font-family: var(--disp); font-weight: 600; font-size: 1.02rem; color: #fff; margin: 0; }
 .footer-contact a { color: rgba(255, 255, 255, 0.85); font-weight: 600; width: fit-content; }
 .footer-contact a:hover { color: #ff8bb4; }
 .footer-word { color: #fff; }
