@@ -1,50 +1,34 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
-const header = document.getElementById("header");
-const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 20);
-onScroll();
-window.addEventListener("scroll", onScroll, { passive: true });
-
 const burger = document.getElementById("burger");
-const nav = document.getElementById("nav");
+const navLinks = document.getElementById("navLinks");
 burger.addEventListener("click", () => {
-  const open = nav.classList.toggle("open");
+  const open = navLinks.classList.toggle("open");
   burger.classList.toggle("open", open);
   burger.setAttribute("aria-expanded", String(open));
 });
-nav.querySelectorAll("a").forEach((a) =>
+navLinks.querySelectorAll("a").forEach((a) =>
   a.addEventListener("click", () => {
-    nav.classList.remove("open");
+    navLinks.classList.remove("open");
     burger.classList.remove("open");
     burger.setAttribute("aria-expanded", "false");
   })
 );
 
-const io = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((e) => {
-      if (e.isIntersecting) {
-        e.target.classList.add("in");
-        io.unobserve(e.target);
-      }
-    });
-  },
-  { threshold: 0.12 }
-);
-document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
-
-document.querySelectorAll(".acc-q").forEach((q) => {
-  q.addEventListener("click", () => {
-    const item = q.parentElement;
-    const panel = item.querySelector(".acc-a");
-    const open = q.getAttribute("aria-expanded") === "true";
-    document.querySelectorAll(".acc-q").forEach((o) => {
-      o.setAttribute("aria-expanded", "false");
-      o.parentElement.querySelector(".acc-a").style.maxHeight = null;
-    });
-    if (!open) {
-      q.setAttribute("aria-expanded", "true");
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
+const items = Array.from(document.querySelectorAll(".acc-item"));
+function setOpen(item, open) {
+  const q = item.querySelector(".acc-q");
+  const panel = item.querySelector(".acc-a");
+  const mark = item.querySelector(".acc-mark");
+  q.setAttribute("aria-expanded", String(open));
+  panel.style.maxHeight = open ? panel.scrollHeight + "px" : null;
+  mark.textContent = open ? "−" : "+";
+}
+items.forEach((item, i) => {
+  item.querySelector(".acc-q").addEventListener("click", () => {
+    const isOpen = item.querySelector(".acc-q").getAttribute("aria-expanded") === "true";
+    items.forEach((o) => setOpen(o, false));
+    if (!isOpen) setOpen(item, true);
   });
+  if (i === 0) setOpen(item, true);
 });
